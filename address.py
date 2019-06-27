@@ -1,8 +1,7 @@
 """
 TODO: Fix bug where street_suffix is between street_name and street_type
 TODO: You realise you don’t need street_type
-TODO: You need to add handling of level numbers - level details come after unit details.
-TODO:   Level number is optional e.g., GROUND FLOOR 1 SMITH ST, KAMBAH ACT 2902
+TODO: You need to add handling of level numbers - level details come after unit details. Level number is optional e.g., GROUND FLOOR 1 SMITH ST, KAMBAH ACT 2902
 TODO: Add handling of post office boxes (e.g., postal_delivery_type: PO BOX, postal_delivery_id: 10, expected: PO BOX 10, KAMBAH ACT 2902)
 """
 
