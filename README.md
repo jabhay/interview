@@ -6,3 +6,8 @@ To get someone started, simply:
 - activate a virtual environment
 - install the requirements
 - ... and get coding!
+
+To test, run:
+```bash
+pytest -qrs test_address.py
+```
