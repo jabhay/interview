@@ -1,9 +1,11 @@
 """
 TODO: Fix bug where street_suffix is between street_name and street_type
 TODO: You realise you don’t need street_type
-TODO: You need to add handling of level numbers - level details come after unit details. Level number is optional e.g., GROUND FLOOR 1 SMITH ST, KAMBAH ACT 2902
+TODO: You need to add handling of level numbers - level details come after unit details.
+TODO:   Level number is optional e.g., GROUND FLOOR 1 SMITH ST, KAMBAH ACT 2902
 TODO: Add handling of post office boxes (e.g., postal_delivery_type: PO BOX, postal_delivery_id: 10, expected: PO BOX 10, KAMBAH ACT 2902)
 """
+
 
 class Address:
 
@@ -47,7 +49,7 @@ class Address:
         else:
             street_number = ''
         street_number += self._street_number_1
-        street: str = ' '.join(x for x in [self._street_name, self._street_suffix, self._street_type] if x)
+        street: str = ' '.join(x for x in [self._street_name, self._street_type, self._street_suffix] if x)
         location: str = ' '.join([self._locality, self._state, self._postcode])
         result = ' '.join([street_number, street + ',', location])
         return result

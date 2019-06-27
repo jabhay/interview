@@ -21,4 +21,3 @@ def test_get_full_address(
         locality=locality, state=state, postcode=postcode, unit_type=unit_type, unit_number=unit_number
     )
     assert expected_value == address.get_full_address()
-
