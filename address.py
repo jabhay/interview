@@ -48,7 +48,7 @@ class Address:
         else:
             street_number = ''
         street_number += self._street_number_1
-        street: str = ' '.join(x for x in [self._street_name, self._street_type, self._street_suffix] if x)
+        street: str = ' '.join(x for x in [self._street_name, self._street_suffix, self._street_type] if x)
         location: str = ' '.join([self._locality, self._state, self._postcode])
         result = ' '.join([street_number, street + ',', location])
         return result
